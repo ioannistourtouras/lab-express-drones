@@ -1,1 +1,9 @@
 <h2>Available drones</h2>
+<div>
+{{#each allTheDrones}}
+    {{ this.name}}
+    {{this.propellers}}
+    {{this.maxSpeed}}
+<a href="/drones/{{this.id}}/edit">Update the drone</a>
+{{/each}}
+</div>
